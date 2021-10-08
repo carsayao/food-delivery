@@ -1,0 +1,28 @@
+15
+Store 3
+Driver 213
+4.3
+Driver 434
+3.2
+Driver 211
+0.23
+Driver 241
+8.4
+Driver 58
+0.9
+Driver 92
+9.0
+Store 7
+Store 19
+Store 14
+Store 9
+Store 2
+Store 5
+Store 6
+Store 10
+Store 8
+Store 11
+Store 12
+Store 18
+Store 21
+Store 1
