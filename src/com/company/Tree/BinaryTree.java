@@ -8,10 +8,10 @@ public class BinaryTree {
         this.root = null;
     }
 
-    public void copyTree() {
-        if (this.root != null)
-            this.root = copyTree(this.root);
-    }
+    // public void copyTree() {
+    //     if (this.root != null)
+    //         this.root = copyTree(this.root);
+    // }
 
     // Display data in sorted order
     public void inorder() {

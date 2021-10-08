@@ -12,7 +12,7 @@
  *  text file "text.txt". We invoke the DoublyLinkedList
  *  constructor, ReadFile constructor, open the file,
  *  read the file into the DoublyLinkedList, then close it.
- *  We then display the intial list, then simulate "completing"
+ *  We then display the initial list, then simulate "completing"
  *  orders by receiving input and deleting the matching order.
  *  I display the tail after every delete to show that tail
  *  is at the correct place.
@@ -28,7 +28,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*
+        // Read in list of orders and show deletion
+        //*
 
         System.out.println("\"Uber Eats\"");
 
@@ -37,9 +38,9 @@ public class Main {
         // ReadFile class that handles the reading of data
         // from an external file and reads into our classes
         ReadFile f = new ReadFile();
-        f.openFile("/Program4/src/com/company/test.txt",
+        f.openFile("/src/com/company/",
                     "test.txt");
-        f.readFile(d);
+        f.readOrders(d);
         f.closeFile();
 
         System.out.println("Our list of orders:");
@@ -66,6 +67,7 @@ public class Main {
         } while(response.toUpperCase().equals("Y"));
         //*/
 
+        // Balanced tree test by manually entering ints
         /*
         BalancedTree b = new BalancedTree();
         Scanner input = new Scanner(System.in);
@@ -88,11 +90,14 @@ public class Main {
         b.inorder();
         //*/
 
+        // Balanced tree for driver proximities to stores (unfinished)
+        /*
         BalancedTree t = new BalancedTree();
         ReadFile f = new ReadFile();
-        f.openFile("/Program4/src/com/company/",
+        f.openFile("/src/com/company/",
                     "test1.txt");
         f.readStoresAndDrivers(t);
+        //*/
     }
 
 

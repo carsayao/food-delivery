@@ -1,7 +1,5 @@
 /**
  *  Carlos Miguel Sayao
- *  CS202
- *  Program 4
  *  Food.java
  *
  *  Food class that holds a Name, ID number, and LinkedList.

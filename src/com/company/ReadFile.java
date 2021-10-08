@@ -1,6 +1,6 @@
 /**
  *  Carlos Miguel Sayao
- *  Readfile.java
+ *  ReadFile.java
  *
  *  ReadFile will handle all our file reading methods.
  *  The structure of the text file is the following:
@@ -25,10 +25,12 @@ public class ReadFile {
     protected Scanner input;
     protected String path;
     protected String fileName;
+    protected String cwd;
 
     // Set Scanner to open, handle errors
     public void openFile(String p, String f) {
-        this.path = p;
+        this.cwd = System.getProperty("user.dir");
+        this.path = cwd + p;
         this.fileName = f;
 
         // Handle FileNotFoundException
@@ -37,8 +39,11 @@ public class ReadFile {
         }
         catch(FileNotFoundException exception) {
             System.out.println(
-                    "Unable to open file '" +
-                            fileName + "'");
+                    "Unable to open file '"
+                    + path + fileName + "'");
+            System.out.println(
+                    "Working Directory: "
+                    + path);
         }
     }
 

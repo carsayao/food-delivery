@@ -162,10 +162,10 @@ public class Node {
         System.out.println(d);
     }
 
-    /*
+    //*
     // Return this.i
-    public int getInt() {
-        return this.;
+    public double getInt() {
+        return this.d;
     }
     //*/
 
