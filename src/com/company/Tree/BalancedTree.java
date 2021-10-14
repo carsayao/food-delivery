@@ -30,7 +30,7 @@ public class BalancedTree extends BinaryTree {
         c.setHeight(max(c.getLeftHeight(),
                 c.getRightHeight()) +1);
         this.balance = c.getBalance();
-        System.out.println("Balance: " + this.balance);
+        // System.out.println("Balance: " + this.balance);
         // Left left, then return rotated subtree
         if (this.balance > 1 && num <= c.getLeft().getInt())
             return c.rotateRight();
