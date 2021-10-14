@@ -23,6 +23,7 @@ import com.company.List.DoublyLinkedList;
 import com.company.Tree.BalancedTree;
 
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
@@ -64,29 +65,38 @@ public class Main {
 
             System.out.println("Again? (Y or N)");
             response = input.nextLine();
-        } while(response.toUpperCase().equals("Y"));
+        } while(response.toUpperCase().equals("Y") || response.equals(""));
+        //*/
+
+        // Sleep for 3 seconds
+        /*
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //*/
 
         // Balanced tree test by manually entering ints
-        /*
+        //*
         BalancedTree b = new BalancedTree();
-        Scanner input = new Scanner(System.in);
+        Scanner input1 = new Scanner(System.in);
         System.out.println("Tree test.");
-        String response;
-        int i;
+        String response1;
+        int i1;
         do {
             System.out.println("Enter int to be inserted:");
-            i = input.nextInt();
-            input.nextLine();
+            i1 = input1.nextInt();
+            input1.nextLine();
 
-            b.insert(i);
+            b.insert(i1);
 
             System.out.println("Resulting tree:");
             b.displayTree();
 
             System.out.println("Again? (Y or N)");
-            response = input.nextLine();
-        } while(response.toUpperCase().equals("Y"));
+            response1 = input1.nextLine();
+        } while(response1.toUpperCase().equals("Y") || response1.equals(""));
         b.inorder();
         //*/
 
